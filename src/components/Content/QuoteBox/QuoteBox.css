@@ -1,0 +1,30 @@
+.quote__box{
+    width:300px;
+    padding: 20px 40px;
+    text-align: center;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.quote__text {
+    font-size: 1.5em;
+    margin-bottom:0.3em
+}
+
+.quote__author{
+    text-align: end
+}
+
+.quote__action {
+    margin-top:20px
+}
+
+@media only screen and (min-width: 600px) {
+    .quote__box{
+        width:450px
+    }
+  }
