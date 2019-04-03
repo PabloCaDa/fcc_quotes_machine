@@ -1,0 +1,60 @@
+/* Variables  */
+
+:root {
+    --main-brand-color: #B76944
+}
+
+/* General Styles */
+
+.App{
+    font-family: 'Raleway', sans-serif;
+}
+
+/* Transitions */
+
+.color-trans {
+    transition: color 2s;
+    -webkit-transition: color 2s;
+    -moz-transition: color 2s;
+    -ms-transition: color 2s;
+    -o-transition: color 2s;
+}
+
+.bg-trans {
+    transition: background-color 2s;
+    -webkit-transition: background-color 2s;
+    -moz-transition: background-color 2s;
+    -ms-transition: background-color 2s;
+    -o-transition: background-color 2s;
+}
+
+.fadeIn {
+    animation: fadeIn 1s ease-in;
+    -webkit-animation: fadeIn 1s ease-in;
+} 
+
+.fadeOut {
+    animation: fadeOut 1s ease-in;
+    -webkit-animation: fadeOut 1s ease-in;
+} 
+
+/* Animations */
+
+
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}

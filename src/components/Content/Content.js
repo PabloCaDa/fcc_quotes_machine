@@ -4,12 +4,14 @@ import QuoteBox from './QuoteBox/QuoteBox'
 
 const contentStyle = {
     height:'80vh',
-    backgroundColor: '#B76944'
+    backgroundColor: 'var(--main-brand-color)',
+    color: 'var(--main-brand-color)'
+    
 }
 
 const Content = () => {
   return (
-    <div className="container-fluid d-flex justify-content-center align-items-center" style={contentStyle}>
+    <div className="container-fluid d-flex justify-content-center align-items-center bg-trans" style={contentStyle}>
       <QuoteBox></QuoteBox>
     </div>
   )

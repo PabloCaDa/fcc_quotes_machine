@@ -8,19 +8,76 @@
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
+    transition:max-height 3s;
+    -webkit-transition:max-height 3s;
+    -moz-transition:max-height 3s;
+    -ms-transition:max-height 3s;
+    -o-transition:max-height 3s;
 }
 
 .quote__text {
     font-size: 1.5em;
-    margin-bottom:0.3em
+    margin-bottom:0.3em;
+    
 }
 
 .quote__author{
-    text-align: end
+    text-align: end;
+    animation:fade 1s ease-in;
+    -webkit-animation:fade 1s ease-in;
 }
 
 .quote__action {
-    margin-top:20px
+    margin-top:20px;
+    color: #f2f2f2;
+}
+
+.quotes__action--social a{
+    color: #f2f2f2;
+    margin-right: 5px;
+    background-color: var(--main-brand-color);
+}
+
+.quotes__action--social a:hover{
+    color: #f2f2f2;
+    background-color: var(--main-brand-color);
+}
+
+
+.qoute__button{
+    background-color: var(--main-brand-color);
+    padding: 10px;
+    border:none;
+    font-size: 14px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    color: #f2f2f2;
+    transition:background-color 2s;
+    outline:none
+    
+}
+
+.qoute__button:hover{
+    opacity: 0.9;
+    outline:none
+    
+}
+
+.qoute__button:focus{
+    opacity: 0.9;
+    outline:none
+    
+}
+
+.quote__button--tumblr{
+    padding: 10px 13px
+}
+
+button.qoute__button{
+    font-size:12px
 }
 
 @media only screen and (min-width: 600px) {
