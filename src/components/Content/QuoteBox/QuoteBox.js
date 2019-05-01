@@ -13,6 +13,9 @@ export default class QuoteBox extends Component {
         quotes: [],
         author: '',
         quote: '',
+        colors: [
+            '#A1C5AA', '#82BF94', '#E7D27C', '#B46858', '#126D43', '#6BB8A0', '#B9BAB8', '#B98F69', '#C25755', '#BD4948'
+        ]
     }
 
     componentDidMount = () => {
@@ -37,7 +40,7 @@ export default class QuoteBox extends Component {
                 quote: this.state.quotes[index].quote,
                 author: this.state.quotes[index].author
             }, () => {  
-                styleSheet.setProperty('--main-brand-color', COLORS[Math.floor(Math.random() * COLORS.length)])
+                styleSheet.setProperty('--main-brand-color', this.state.colors[Math.floor(Math.random() * COLORS.length)])
                 quote_textBox.classList.remove("fadeOut");
                 quote_textBox.classList.add("fadeIn");
             })
