@@ -2,7 +2,11 @@ import React, { Component } from 'react'
 import './QuoteBox.css'
 
 import Loader from '../../Loader/Loader'
-import { COLORS } from '../../../constants'
+// import { COLORS } from '../../../constants'
+
+const COLORS =  [
+    '#A1C5AA', '#82BF94', '#E7D27C', '#B46858', '#126D43', '#6BB8A0', '#B9BAB8', '#B98F69', '#C25755', '#BD4948'
+]
 
 export default class QuoteBox extends Component {
     state = {
