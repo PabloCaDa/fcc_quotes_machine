@@ -2,20 +2,14 @@ import React, { Component } from 'react'
 import './QuoteBox.css'
 
 import Loader from '../../Loader/Loader'
-// import { COLORS } from '../../../constants'
+import { COLORS } from '../../../constants'
 
-const COLORS =  [
-    '#A1C5AA', '#82BF94', '#E7D27C', '#B46858', '#126D43', '#6BB8A0', '#B9BAB8', '#B98F69', '#C25755', '#BD4948'
-]
 
 export default class QuoteBox extends Component {
     state = {
         quotes: [],
         author: '',
-        quote: '',
-        colors: [
-            '#A1C5AA', '#82BF94', '#E7D27C', '#B46858', '#126D43', '#6BB8A0', '#B9BAB8', '#B98F69', '#C25755', '#BD4948'
-        ]
+        quote: ''
     }
 
     componentDidMount = () => {
@@ -33,15 +27,13 @@ export default class QuoteBox extends Component {
         quote_textBox.classList.add("fadeOut");
         quote_textBox.classList.remove("fadeIn");
         void quote_textBox.offsetWidth;
-        // const styleSheet = document.styleSheets[2].rules[0].style;
         setTimeout(() => {
             const index = Math.floor(Math.random() * this.state.quotes.length);
             this.setState ({
                 quote: this.state.quotes[index].quote,
                 author: this.state.quotes[index].author
             }, () => {  
-                // styleSheet.setProperty('--main-brand-color', this.state.colors[Math.floor(Math.random() * COLORS.length)])
-                document.body.style.setProperty('--main-brand-color', this.state.colors[Math.floor(Math.random() * COLORS.length)])
+                document.body.style.setProperty('--main-brand-color', COLORS[Math.floor(Math.random() * COLORS.length)])
                 quote_textBox.classList.remove("fadeOut");
                 quote_textBox.classList.add("fadeIn");
             })
