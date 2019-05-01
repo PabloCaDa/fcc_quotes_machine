@@ -1,15 +1,15 @@
 {
-  "main.css": "/fcc_quotes_machine/static/css/main.0171b308.chunk.css",
-  "main.js": "/fcc_quotes_machine/static/js/main.3cf11748.chunk.js",
-  "main.js.map": "/fcc_quotes_machine/static/js/main.3cf11748.chunk.js.map",
+  "main.css": "/fcc_quotes_machine/static/css/main.f42378af.chunk.css",
+  "main.js": "/fcc_quotes_machine/static/js/main.730ced11.chunk.js",
+  "main.js.map": "/fcc_quotes_machine/static/js/main.730ced11.chunk.js.map",
   "runtime~main.js": "/fcc_quotes_machine/static/js/runtime~main.5bef19d6.js",
   "runtime~main.js.map": "/fcc_quotes_machine/static/js/runtime~main.5bef19d6.js.map",
   "static/css/2.59fb6570.chunk.css": "/fcc_quotes_machine/static/css/2.59fb6570.chunk.css",
   "static/js/2.b7fb4c35.chunk.js": "/fcc_quotes_machine/static/js/2.b7fb4c35.chunk.js",
   "static/js/2.b7fb4c35.chunk.js.map": "/fcc_quotes_machine/static/js/2.b7fb4c35.chunk.js.map",
   "index.html": "/fcc_quotes_machine/index.html",
-  "precache-manifest.199844c69722170ddeca4b691eaa1763.js": "/fcc_quotes_machine/precache-manifest.199844c69722170ddeca4b691eaa1763.js",
+  "precache-manifest.6114e0ce6aff7bcd508cdff96d068c42.js": "/fcc_quotes_machine/precache-manifest.6114e0ce6aff7bcd508cdff96d068c42.js",
   "service-worker.js": "/fcc_quotes_machine/service-worker.js",
   "static/css/2.59fb6570.chunk.css.map": "/fcc_quotes_machine/static/css/2.59fb6570.chunk.css.map",
-  "static/css/main.0171b308.chunk.css.map": "/fcc_quotes_machine/static/css/main.0171b308.chunk.css.map"
+  "static/css/main.f42378af.chunk.css.map": "/fcc_quotes_machine/static/css/main.f42378af.chunk.css.map"
 }
