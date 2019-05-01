@@ -33,14 +33,15 @@ export default class QuoteBox extends Component {
         quote_textBox.classList.add("fadeOut");
         quote_textBox.classList.remove("fadeIn");
         void quote_textBox.offsetWidth;
-        const styleSheet = document.styleSheets[2].rules[0].style;
+        // const styleSheet = document.styleSheets[2].rules[0].style;
         setTimeout(() => {
             const index = Math.floor(Math.random() * this.state.quotes.length);
             this.setState ({
                 quote: this.state.quotes[index].quote,
                 author: this.state.quotes[index].author
             }, () => {  
-                styleSheet.setProperty('--main-brand-color', this.state.colors[Math.floor(Math.random() * COLORS.length)])
+                // styleSheet.setProperty('--main-brand-color', this.state.colors[Math.floor(Math.random() * COLORS.length)])
+                document.body.style.setProperty('--main-brand-color', this.state.colors[Math.floor(Math.random() * COLORS.length)])
                 quote_textBox.classList.remove("fadeOut");
                 quote_textBox.classList.add("fadeIn");
             })
